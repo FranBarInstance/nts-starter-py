@@ -1,0 +1,40 @@
+{
+    "__comment_:schema:drawer": "Menu order. Reserve space for menu keys to set the order.",
+    "schema": {
+        "inherit": {
+            "data": {
+                "drawer": {
+                    "menu": {
+                        "session:": {
+                            "main": {},
+                            "user": {},
+                            "none": {},
+                            "theme": {},
+                            "info": {}
+                        },
+                        "session:true": {
+                            "main": {},
+                            "user": {},
+                            "none": {},
+                            "theme": {},
+                            "info": {}
+                        }
+                    }
+                },
+                "navbar": {
+                    "menu": {
+                        "session:": {
+                            "signin": {},
+                            "signup": {},
+                            "language": {}
+                        },
+                        "session:true": {
+                            "signoff": {},
+                            "language": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "inherit": {
+        "data": {
+            "form-class": "forms-bt5-clean border border-0",
+            "form-field-spacing": "mb-2",
+            "form-field-send-spacing": "mt-3"
+        }
+    },
+    "data": {
+        "current": {
+            "template":  {
+                "nav_cache_seconds": 600,
+                "cache_seconds": 600,
+                "error_cache_seconds": 600
+            }
+        }
+    }
+}

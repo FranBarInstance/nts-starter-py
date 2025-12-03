@@ -1,0 +1,16 @@
+{
+    "schema": {
+        "inherit": {
+            "data": {}
+        },
+        "data": {
+            "current": {
+                "site": {
+                    "name": "Neutral TS",
+                    "title": "Neutral TS PWA",
+                    "description": "Neutral TS Skeleton for PWA in Python"
+                }
+            }
+        }
+    }
+}

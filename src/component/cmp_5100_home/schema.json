@@ -1,0 +1,46 @@
+{
+    "inherit": {
+        "data": {
+            "drawer": {
+                "name": "Neutral TS",
+                "menu": {
+                    "session:": {
+                        "main": {
+                            "name": "Main",
+                            "tabs": "main",
+                            "icon": "x-icon-menu"
+                        }
+                    },
+                    "session:true": {
+                        "main": {
+                            "name": "Main",
+                            "tabs": "main",
+                            "icon": "x-icon-menu"
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "session:": {
+                    "main": {
+                        "home": {
+                            "text": "Home",
+                            "link": "/",
+                            "icon": "x-icon-home"
+                        }
+                    }
+                },
+                "session:true": {
+                    "main": {
+                        "home": {
+                            "text": "Home",
+                            "link": "/",
+                            "icon": "x-icon-home"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {}
+}

@@ -1,0 +1,32 @@
+{
+    "inherit": {
+        "data": {
+            "navbar": {
+                "menu": {
+                    "session:": {
+                        "language": {}
+                    },
+                    "session:true": {
+                        "language": {}
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "current": {
+            "site": {
+                "name": "Neutral TS !",
+                "title": "Neutral TS PWA !",
+                "description": "Neutral TS Skeleton for PWA in Python !",
+                "cover": "/img/cover.jpg",
+                "logo": "/img/logo.jpg",
+                "static": "/",
+                "languages": [
+                    "en",
+                    "es"
+                ]
+            }
+        }
+    }
+}

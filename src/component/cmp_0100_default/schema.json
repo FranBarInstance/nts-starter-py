@@ -1,0 +1,69 @@
+{
+    "inherit": {
+        "locale": {
+            "current": "en",
+            "trans": {
+                "en": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français"
+                },
+                "es": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français"
+                },
+                "fr": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français"
+                },
+                "de": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français"
+                },
+                "xx": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français"
+                }
+            }
+        },
+        "data": {
+            "navbar": {
+                "menu": {
+                    "session:": {},
+                    "session:true": {}
+                }
+            },
+            "drawer": {
+                "menu": {
+                    "session:": {},
+                    "session:true": {}
+                }
+            },
+            "current": {
+                "route": {
+                    "title": "Neutral TS PWA !",
+                    "description": "Neutral TS Skeleton for PWA in Python !"
+                }
+            }
+        }
+    },
+    "data": {
+        "current": {
+            "template": {},
+            "theme": {},
+            "site": {
+                "title": "Neutral TS PWA !",
+                "description": "Neutral TS Skeleton for PWA in Python !"
+            }
+        }
+    }
+}

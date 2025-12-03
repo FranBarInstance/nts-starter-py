@@ -1,0 +1,17 @@
+"""Home routes module."""
+
+from flask import Response, request
+
+from core.dispatcher import Dispatcher  # pylint: disable=import-error
+
+from . import bp  # pylint: disable=no-name-in-module
+
+
+@bp.route('/<path:relative_route>', methods=['GET'])
+def rrss_catch_all(relative_route) -> Response:
+    """Handle undefined urls."""
+    route = f'info/{relative_route}'
+    dispatch = Dispatcher(request, route)
+    dispatch.schema_data['dispatch_result'] = True
+    dispatch.schema_data['current']['template']['route'] = bp.current_template_route
+    return dispatch.view.render()

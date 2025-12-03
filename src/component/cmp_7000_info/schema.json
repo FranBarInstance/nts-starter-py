@@ -1,0 +1,75 @@
+{
+    "inherit": {
+        "data": {
+            "drawer": {
+                "menu": {
+                    "session:": {
+                        "help": {
+                            "name": "Help",
+                            "tabs": "info",
+                            "icon": "x-icon-help"
+                        }
+                    },
+                    "session:true": {
+                        "help": {
+                            "name": "Help",
+                            "tabs": "info",
+                            "icon": "x-icon-help"
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "session:": {
+                    "help": {
+                        "about": {
+                            "text": "About",
+                            "link": "/none/about",
+                            "icon": "x-icon-about"
+                        },
+                        "help": {
+                            "text": "Help",
+                            "link": "/none/help",
+                            "icon": "x-icon-help"
+                        },
+                        "contact": {
+                            "text": "Contact",
+                            "link": "/none/contact",
+                            "icon": "x-icon-contact"
+                        },
+                        "legal": {
+                            "text": "Legal",
+                            "link": "/none/legal",
+                            "icon": "x-icon-legal"
+                        }
+                    }
+                },
+                "session:true": {
+                    "help": {
+                        "about": {
+                            "text": "About",
+                            "link": "/none/about",
+                            "icon": "x-icon-about"
+                        },
+                        "help": {
+                            "text": "Help",
+                            "link": "/none/help",
+                            "icon": "x-icon-help"
+                        },
+                        "contact": {
+                            "text": "Contact",
+                            "link": "/none/contact",
+                            "icon": "x-icon-contact"
+                        },
+                        "legal": {
+                            "text": "Legal",
+                            "link": "/none/legal",
+                            "icon": "x-icon-legal"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {}
+}
