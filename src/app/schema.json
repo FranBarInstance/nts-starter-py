@@ -23,7 +23,7 @@
     "data": {
         "CONTEXT": {
             "CONFIG": {},
-            "ROUTE": "",
+            "COMP_ROUTE": "",
             "GET": {},
             "POST": {},
             "HEADERS": {},

@@ -1,10 +1,10 @@
 # Neutral TS Starter Py
 
-**Neutral TS Starter Py** is a modular and opinionated scaffold for building Progressive Web Applications (PWA) using **Python (Flask)** on the backend and **Neutral TS** as a universal template engine.
+**Neutral TS Starter Py** es un scaffold modular y opinionado para construir Progressive Web Applications (PWA) usando **Python (Flask)** en el backend y **Neutral TS** como motor de plantillas universal.
 
-This project is designed to be extensible through a "plug-and-play" component architecture, allowing scalability from quick prototypes to complex applications while maintaining a clean and decoupled structure.
+Este proyecto está diseñado para ser extensible mediante una arquitectura de componentes "plug-and-play", permitiendo escalabilidad desde prototipos rápidos hasta aplicaciones complejas manteniendo una estructura limpia y desacoplada.
 
-## 🚀 Features
+## Features
 
 *   **Solid Backend**: Built on **Flask**, leveraging its ecosystem and simplicity.
 *   **Modular Architecture**: Everything is a component. Logic, routes, templates, and configurations are encapsulated in independent modules within `src/component`.
@@ -12,13 +12,13 @@ This project is designed to be extensible through a "plug-and-play" component ar
 *   **Neutral Templating (NTPL)**: Powerful templating system allowing inheritance, mixins, and dynamic rendering.
 *   **Override System**: Customize base components without touching their original code thanks to the cascading loading system.
 
-## 🛠️ Prerequisites
+## Prerequisitos
 
 *   Python 3.8 or higher.
 *   pip (Python package manager).
 *   Recommended: Virtual environment (`venv`).
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Clone and Configure Environment
 
@@ -47,7 +47,7 @@ python src/run.py
 
 The application will be available at `http://localhost:5000` (by default).
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 nts-starter-py/
@@ -63,7 +63,7 @@ nts-starter-py/
 └── public/                     # Public static files
 ```
 
-## 🧩 Component Architecture
+## Component Architecture
 
 The strength of this starter lies in `src/component`. Each folder there is a self-sufficient module.
 
@@ -78,14 +78,14 @@ The strength of this starter lies in `src/component`. Each folder there is a sel
 
 You can consult `src/component/cmp_7000_hellocomp/README.md` for a detailed example of a "Hello Component", or the technical documentation in `src/component/README.md`.
 
-## 🔧 Configuration
+## Configuration
 
 Configuration is handled in layers:
 1.  **Global**: Environment variables and Flask configuration.
 2.  **Per Component**: `schema.json` within each component.
 3.  **Customization**: `custom.json` (ignored by git) allows overriding local configurations without affecting the codebase.
 
-## 📦 Deployment
+## Deployment
 
 For production, use a WSGI server like Gunicorn pointing to `src/wsgi.py`:
 

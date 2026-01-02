@@ -76,7 +76,7 @@ class Template:
         self, status_code=404, status_text="Not Found", status_param=""
     ) -> Response:
         """render template ERROR and return response"""
-        self.data["CONTEXT"]["ROUTE"] = "HTTP_ERROR"
+        self.data["COMP_ROUTE"] = "HTTP_ERROR"
         self.data["HTTP_ERROR"] = {
             "code": status_code,
             "text": status_text,

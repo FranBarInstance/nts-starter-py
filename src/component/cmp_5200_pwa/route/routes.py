@@ -26,7 +26,7 @@ def service_worker() -> Response:
 def pwa_manifest_json(route) -> Response:
     """manifest.json requires variable replacement."""
     dispatch = Dispatcher(request, route)
-    template = f"{bp.current_template_route}/{route}"
+    template = f"{bp.current_neutral_route}/{route}"
 
     headers = {
         "Cache-Control": Config.STATIC_CACHE_CONTROL,

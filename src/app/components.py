@@ -274,7 +274,7 @@ def create_blueprint(component, component_schema):
     bp.component = component
     bp.schema = component_schema
     bp.manifest = manifest
-    bp.current_template_route = os.path.join(component["path"], "neutral", "route")
+    bp.current_neutral_route = os.path.join(component["path"], "neutral", "route")
 
     return bp
 

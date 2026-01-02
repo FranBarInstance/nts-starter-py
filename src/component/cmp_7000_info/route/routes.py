@@ -13,5 +13,5 @@ def info_catch_all(relative_route) -> Response:
     route = f"{bp.url_prefix}/{relative_route}"
     dispatch = Dispatcher(request, route)
     dispatch.schema_data["dispatch_result"] = True
-    dispatch.schema_data["current"]["template"]["route"] = bp.current_template_route
+    dispatch.schema_data["current"]["template"]["route"] = bp.current_neutral_route
     return dispatch.view.render()

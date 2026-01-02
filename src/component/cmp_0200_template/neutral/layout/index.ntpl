@@ -35,7 +35,7 @@
     Content of the route or 404
 *:}
 {:include;
-    {:;current->template->route:}/{:;ROUTE:}/content-snippets.ntpl
+    {:;current->template->route:}/root/{:;COMP_ROUTE:}content-snippets.ntpl
 :}{:else;
     {:exit; 404 :}
 :}
