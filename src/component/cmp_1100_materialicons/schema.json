@@ -60,11 +60,13 @@
             "x-icon-reload": "x-icon mdi mdi-reload",
             "x-icon-theme": "x-icon mdi mdi-monitor-dashboard",
             "x-icon-about": "x-icon mdi mdi-information-outline",
+            "x-icon-info": "x-icon mdi mdi-information-outline",
             "x-icon-contact": "x-icon mdi mdi-mailbox-open-outline",
             "x-icon-test": "x-icon mdi mdi-ab-testing",
             "x-icon-color": "x-icon mdi mdi-palette",
             "x-icon-rss": "x-icon mdi mdi-rss",
-            "x-icon-birthdate": "x-icon mdi mdi-calendar-account-outline"
+            "x-icon-birthdate": "x-icon mdi mdi-calendar-account-outline",
+            "x-icon-greeting": "x-icon mdi mdi-human-greeting-variant"
         }
     }
 }

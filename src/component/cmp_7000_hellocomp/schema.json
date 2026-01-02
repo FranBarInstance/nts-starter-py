@@ -1,0 +1,102 @@
+{
+    "inherit": {
+        "locale": {
+            "trans": {
+                "en": {},
+                "es": {
+                    "Hello Component": "Componente Hola",
+                    "Test 1": "Prueba 1",
+                    "Test 2": "Prueba 2",
+                    "Test 404": "Prueba 404"
+                },
+                "fr": {
+                    "Hello Component": "Composant Bonjour",
+                    "Test 1": "Essai 1",
+                    "Test 2": "Essai 2",
+                    "Test 404": "Essai 404"
+                },
+                "de": {
+                    "Hello Component": "Hallo-Komponente",
+                    "Test 1": "Testlauf 1",
+                    "Test 2": "Testlauf 2",
+                    "Test 404": "Testlauf 404"
+                }
+            }
+        },
+        "data": {
+            "drawer": {
+                "menu": {
+                    "session:": {
+                        "hello-tab": {
+                            "name": "Hello",
+                            "tabs": "hello-tab",
+                            "icon": "x-icon-greeting"
+                        }
+                    },
+                    "session:true": {
+                        "hello-tab": {
+                            "name": "Hello",
+                            "tabs": "hello-tab",
+                            "icon": "x-icon-greeting"
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "session:": {
+                    "hello-tab": {
+                        "hello": {
+                            "text": "Hello Component",
+                            "link": "/hello-component",
+                            "icon": "x-icon-greeting"
+                        },
+                        "test1": {
+                            "text": "Test 1",
+                            "link": "/hello-component/test1",
+                            "icon": "x-icon-info"
+                        },
+                        "test2": {
+                            "text": "Test 2",
+                            "link": "/hello-component/test2",
+                            "icon": "x-icon-info"
+                        },
+                        "testerror": {
+                            "text": "Test 404",
+                            "link": "/hello-component/non-existent-route",
+                            "icon": "x-icon-info"
+                        }
+                    }
+                },
+                "session:true": {
+                    "hello-tab": {
+                        "hello": {
+                            "text": "Hello Component",
+                            "link": "/hello-component",
+                            "icon": "x-icon-greeting"
+                        },
+                        "test1": {
+                            "text": "Test 1",
+                            "link": "/hello-component/test1",
+                            "icon": "x-icon-info"
+                        },
+                        "test2": {
+                            "text": "Test 2",
+                            "link": "/hello-component/test2",
+                            "icon": "x-icon-info"
+                        },
+                        "testerror": {
+                            "text": "Test 404",
+                            "link": "/hello-component/non-existent-route",
+                            "icon": "x-icon-info"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "hello-component": {
+            "hello": "Hello from hello component"
+        }
+    }
+}

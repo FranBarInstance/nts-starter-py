@@ -1,17 +1,20 @@
 {
     "inherit": {
-        "data": {
-            "form-class": "forms-bt5-clean border border-0",
-            "form-field-spacing": "mb-2",
-            "form-field-send-spacing": "mt-3"
-        }
-    },
-    "data": {
-        "current": {
-            "template":  {
-                "nav_cache_seconds": 600,
-                "cache_seconds": 600,
-                "error_cache_seconds": 600
+        "locale": {
+            "trans": {
+                "en": {},
+                "es": {
+                    "Error loading this complement": "Error cargando este complemento",
+                    "Not Found": "No encontrado"
+                },
+                "fr": {
+                    "Error loading this complement": "Erreur lors du chargement de ce complément",
+                    "Not Found": "Non trouvé"
+                },
+                "de": {
+                    "Error loading this complement": "Fehler beim Laden dieses Add-ons",
+                    "Not Found": "Nicht gefunden"
+                }
             }
         }
     }

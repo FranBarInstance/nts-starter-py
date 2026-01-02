@@ -13,25 +13,22 @@
                     "ref:locale:en": "English",
                     "ref:locale:es": "Español",
                     "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français"
+                    "ref:locale:fr": "Français",
+                    "Language": "Idioma"
                 },
                 "fr": {
                     "ref:locale:en": "English",
                     "ref:locale:es": "Español",
                     "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français"
+                    "ref:locale:fr": "Français",
+                    "Language": "Langue"
                 },
                 "de": {
                     "ref:locale:en": "English",
                     "ref:locale:es": "Español",
                     "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français"
-                },
-                "xx": {
-                    "ref:locale:en": "English",
-                    "ref:locale:es": "Español",
-                    "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français"
+                    "ref:locale:fr": "Français",
+                    "Language": "Sprache"
                 }
             }
         },

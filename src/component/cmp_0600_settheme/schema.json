@@ -1,5 +1,25 @@
 {
     "inherit": {
+        "locale": {
+            "trans": {
+                "en": {},
+                "es": {
+                    "Theme": "Tema",
+                    "Color": "Color",
+                    "Colors": "Colores"
+                },
+                "fr": {
+                    "Theme": "Thème",
+                    "Color": "Couleur",
+                    "Colors": "Couleurs"
+                },
+                "de": {
+                    "Theme": "Thema",
+                    "Color": "Farbe",
+                    "Colors": "Farben"
+                }
+            }
+        },
         "data": {
             "drawer": {
                 "menu": {

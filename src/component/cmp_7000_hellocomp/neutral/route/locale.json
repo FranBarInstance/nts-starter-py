@@ -1,0 +1,10 @@
+{
+    "trans": {
+        "en": {},
+        "es": {
+            "Test 1": "Prueba 1",
+            "Test 2": "Prueba 2",
+            "Test 404": "Prueba 404"
+        }
+    }
+}

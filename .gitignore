@@ -5,8 +5,7 @@
 **/venv*
 /.vscode
 /src/wsgi_test.py
-/src/component/_*/
-/src/component/_*
+/src/component/__*
 /tmp/*
 !/tmp/README.md
 /config/*

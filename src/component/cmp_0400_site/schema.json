@@ -1,5 +1,29 @@
 {
     "inherit": {
+        "locale": {
+            "trans": {
+                "en": {
+                    "Neutral TS !": "Neutral TS",
+                    "Neutral TS PWA !": "Neutral TS PWA",
+                    "Neutral TS Skeleton for PWA in Python !": "Neutral TS Skeleton for PWA in Python !"
+                },
+                "es": {
+                    "Neutral TS !": "Neutral TS",
+                    "Neutral TS PWA !": "Neutral TS PWA",
+                    "Neutral TS Skeleton for PWA in Python !": "Neutral TS Skeleton for PWA in Python !"
+                },
+                "fr": {
+                    "Neutral TS !": "Neutral TS",
+                    "Neutral TS PWA !": "Neutral TS PWA",
+                    "Neutral TS Skeleton for PWA in Python !": "Neutral TS Skeleton for PWA in Python !"
+                },
+                "de": {
+                    "Neutral TS !": "Neutral TS",
+                    "Neutral TS PWA !": "Neutral TS PWA",
+                    "Neutral TS Skeleton for PWA in Python !": "Neutral TS Skeleton for PWA in Python !"
+                }
+            }
+        },
         "data": {
             "navbar": {
                 "menu": {
@@ -24,7 +48,9 @@
                 "static": "/",
                 "languages": [
                     "en",
-                    "es"
+                    "es",
+                    "fr",
+                    "de"
                 ]
             }
         }
