@@ -5,7 +5,7 @@ This module is an example component designed to illustrate the modular architect
 ## 1. Identity and Registration
 
 *   **Identifier (UUID)**: `hellocomp_0yt2sa` (Must be unique and follow the `name_random` format).
-*   **Base Path**: `/hello-component` (Defined in `manifest.json`).
+*   **Base Path**: `/HelloComponent` (Defined in `manifest.json`).
 *   **Version**: `0.0.0`
 
 ### Registration Lifecycle
@@ -28,13 +28,14 @@ src/component/cmp_7000_hellocomp/
     ├── component-init.ntpl           # (Optional) Global snippets for all app
     └── route/                        # Templates matching URL structure
         ├── index-snippets.ntpl       # (Optional) Shared snippets for this component
-        ├── locale.json               # Component-wide translations
-        ├── data.json                 # Shared data for the route tree
-        └── root/                     # Templates root (Config.COMP_ROUTE_ROOT)
-            ├── data.json             # Route-specific metadata
-            ├── content-snippets.ntpl # Main content for /hello-component
-            ├── test1/                # Templates for /hello-component/test1
-            └── test2/                # Templates for /hello-component/test2
+        ├── locale.json               # (Optional) Component-wide translations
+        ├── data.json                 # (Optional) Shared data for the route tree
+        └── root/                     # Templates
+            ├── data.json             # (Optional) Route-specific metadata
+            ├── locale.json           # (Optional) Translations for this route
+            ├── content-snippets.ntpl # (Required or 404) Main content for /HelloComponent
+            ├── test1/                # Templates for /HelloComponent/test1
+            └── test2/                # Templates for /HelloComponent/test2
 ```
 
 ## 3. Data Schema and Inheritance (`schema.json`)
@@ -97,7 +98,7 @@ They have access to:
 
 Each route in the component follows a flow determined by whether it uses a custom dispatcher or the generic one. The system automatically appends `root` (defined in `Config.COMP_ROUTE_ROOT`) to the route path to find templates.
 
-### A. Base Route: `/hello-component`
+### A. Base Route: `/HelloComponent`
 *   **Trigger**: User accesses the base URL of the component.
 *   **Backend**: Handled by `hellocomp_catch_all` in `routes.py` (Generic Dispatcher).
 *   **Dispatcher**: Received `route=""`. Constructs `comp_route="root"`.
@@ -107,7 +108,7 @@ Each route in the component follows a flow determined by whether it uses a custo
     3.  Renders `content-snippets.ntpl`.
 *   **Result**: Displays the default component homepage.
 
-### B. Custom Route: `/hello-component/test1`
+### B. Custom Route: `/HelloComponent/test1`
 *   **Trigger**: User accesses a specific endpoint requiring custom Python logic.
 *   **Backend**: Handled by `test1` in `routes.py` using `DispatcherHelloComp`.
 *   **Dispatcher**: Received `route="test1"`. Constructs `comp_route="root/test1"`.
@@ -120,7 +121,7 @@ Each route in the component follows a flow determined by whether it uses a custo
     3.  Renders `content-snippets.ntpl` from the `test1` folder.
 *   **Result**: Displays content enriched with data injected from the Python backend.
 
-### C. Generic Sub-route: `/hello-component/test2`
+### C. Generic Sub-route: `/HelloComponent/test2`
 *   **Trigger**: User accesses a sub-path that has no explicit Flask route.
 *   **Backend**: Captured by the `hellocomp_catch_all` regex in `routes.py`.
 *   **Dispatcher**: Received `route="test2"`. Constructs `comp_route="root/test2"`.
@@ -131,7 +132,7 @@ Each route in the component follows a flow determined by whether it uses a custo
 
 ## 7. Development Guide: Adding a New Route
 
-To add a new sub-route `/hello-component/my-page`:
+To add a new sub-route `/HelloComponent/my-page`:
 
 1.  **Create the directory**: `mkdir -p src/component/cmp_7000_hellocomp/neutral/route/root/my-page`
     *(Note the `root` directory in the path)*
