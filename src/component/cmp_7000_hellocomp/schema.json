@@ -1,25 +1,26 @@
 {
+    "__comment_:locale:trans": "The menu translation must be available globally for the entire application",
     "inherit": {
         "locale": {
             "trans": {
                 "en": {},
                 "es": {
                     "Hello Component": "Componente Hola",
-                    "Test 1": "Prueba 1",
-                    "Test 2": "Prueba 2",
-                    "Test 404": "Prueba 404"
+                    "Test One": "Test Uno",
+                    "Test Two": "Test Dos",
+                    "Test Error 404": "Test Error 404"
                 },
                 "fr": {
                     "Hello Component": "Composant Bonjour",
-                    "Test 1": "Essai 1",
-                    "Test 2": "Essai 2",
-                    "Test 404": "Essai 404"
+                    "Test One": "Test Un",
+                    "Test Two": "Test Deux",
+                    "Test Error 404": "Test Erreur 404"
                 },
                 "de": {
                     "Hello Component": "Hallo-Komponente",
-                    "Test 1": "Testlauf 1",
-                    "Test 2": "Testlauf 2",
-                    "Test 404": "Testlauf 404"
+                    "Test One": "Test Eins",
+                    "Test Two": "Test Zwei",
+                    "Test Error 404": "Test Fehler 404"
                 }
             }
         },
@@ -47,22 +48,22 @@
                     "hello-tab": {
                         "hello": {
                             "text": "Hello Component",
-                            "link": "/hello-component",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]",
                             "icon": "x-icon-greeting"
                         },
                         "test1": {
-                            "text": "Test 1",
-                            "link": "/hello-component/test1",
+                            "text": "Test One",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/test1",
                             "icon": "x-icon-info"
                         },
                         "test2": {
-                            "text": "Test 2",
-                            "link": "/hello-component/test2",
+                            "text": "Test Two",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/test2",
                             "icon": "x-icon-info"
                         },
                         "testerror": {
-                            "text": "Test 404",
-                            "link": "/hello-component/non-existent-route",
+                            "text": "Test Error 404",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/non-existent-route",
                             "icon": "x-icon-info"
                         }
                     }
@@ -71,22 +72,22 @@
                     "hello-tab": {
                         "hello": {
                             "text": "Hello Component",
-                            "link": "/hello-component",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]",
                             "icon": "x-icon-greeting"
                         },
                         "test1": {
-                            "text": "Test 1",
-                            "link": "/hello-component/test1",
+                            "text": "Test One",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/test1",
                             "icon": "x-icon-info"
                         },
                         "test2": {
-                            "text": "Test 2",
-                            "link": "/hello-component/test2",
+                            "text": "Test Two",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/test2",
                             "icon": "x-icon-info"
                         },
                         "testerror": {
-                            "text": "Test 404",
-                            "link": "/hello-component/non-existent-route",
+                            "text": "Test Error 404",
+                            "link": "[:;data->hellocomp_0yt2sa->manifest->route:]/non-existent-route",
                             "icon": "x-icon-info"
                         }
                     }

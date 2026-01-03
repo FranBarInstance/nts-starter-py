@@ -3,5 +3,5 @@
     "name": "info",
     "description": "info",
     "version": "0.0.0",
-    "route": "/none"
+    "route": "/info"
 }

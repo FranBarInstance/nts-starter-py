@@ -29,9 +29,9 @@ class DispatcherForm(Dispatcher):
     - Error handling and reporting
     """
 
-    def __init__(self, req, route, ltoken=None, ftoken_field_name=None, form_name="form"):
+    def __init__(self, req, comp_route, neutral_route=None, ltoken=None, ftoken_field_name=None, form_name="form"):
         """Initialize form dispatcher with request context and validation rules."""
-        super().__init__(req, route, ltoken, ftoken_field_name)
+        super().__init__(req, comp_route, neutral_route, ltoken, ftoken_field_name)
         self._form_name = form_name
         self.schema_data[self._form_name] = {
             "error": {

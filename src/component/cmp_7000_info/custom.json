@@ -1,45 +1,6 @@
 {
     "__comment_:custom": "Overwriting shema and manifest values",
-    "schema": {
-        "inherit": {
-            "data": {
-                "menu": {
-                    "session:": {
-                        "help": {
-                            "about": {
-                                "link": "/info/about"
-                            },
-                            "help": {
-                                "link": "/info/help"
-                            },
-                            "contact": {
-                                "link": "/info/contact"
-                            },
-                            "legal": {
-                                "link": "/info/legal"
-                            }
-                        }
-                    },
-                    "session:true": {
-                        "help": {
-                            "about": {
-                                "link": "/info/about"
-                            },
-                            "help": {
-                                "link": "/info/help"
-                            },
-                            "contact": {
-                                "link": "/info/contact"
-                            },
-                            "legal": {
-                                "link": "/info/legal"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    },
+    "schema": {},
     "manifest": {
         "route": "/info"
     }

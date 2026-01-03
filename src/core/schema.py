@@ -14,11 +14,8 @@ from utils.utils import get_ip, merge_dict
 class Schema:
     """Schema"""
 
-    def __init__(self, req, route):
+    def __init__(self, req):
         self.req = req
-        self.route = route.strip("/")
-        if route:
-            self.route += '/'
         self.context = {}
         self.headers = req.headers
         self.properties = {}
@@ -68,7 +65,6 @@ class Schema:
         self.data['CONTEXT']['SESSION'] = self.req.cookies.get(Config.SESSION_KEY, None)
 
     def _populate_context(self) -> None:
-        self.data['COMP_ROUTE'] = self.route
         self.data['CONTEXT']['METHOD'] = self.req.method
         self.data['CONTEXT']['REMOTE_ADDR'] = get_ip()
         self.data['CONTEXT']['PATH'] = self.req.path

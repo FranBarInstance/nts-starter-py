@@ -38,3 +38,60 @@ def merge_dict(a, b):
         return target
 
     recursive_merge(a, b)
+
+def parse_vars(template, data):
+    """Parse variables in template with [:; ... :] delimiters and "->" for nested keys."""
+
+    if not isinstance(data, dict):
+        raise TypeError(f"Expected dict for data, got {type(data).__name__}")
+
+    result = []
+    i = 0
+
+    while i < len(template):
+        start = template.find('[:;', i)
+
+        if start == -1:
+            result.append(template[i:])
+            break
+
+        result.append(template[i:start])
+
+        end = template.find(':]', start + 3)
+
+        if end == -1:
+            raise ValueError(f"Unclosed delimiter at position {start}")
+
+        path = template[start + 3:end]
+
+        if '->' in path:
+            keys = [k.strip() for k in path.split('->')]
+        else:
+            keys = [path.strip()]
+
+        if any(not key for key in keys):
+            raise ValueError(f"Empty key in path: '{path}'")
+
+        value = data
+        for idx, key in enumerate(keys):
+            if isinstance(value, dict) and key in value:
+                value = value[key]
+            else:
+                traversed = '->'.join(keys[:idx]) if idx > 0 else 'root'
+                raise KeyError(
+                    f"Key '{key}' not found at '{traversed}'. "
+                    f"Available keys: {list(value.keys()) if isinstance(value, dict) else 'N/A'}. "
+                    f"Full path: '{path}'"
+                )
+
+        if isinstance(value, (str, int, float, bool, type(None))):
+            result.append(str(value) if value is not None else '')
+        else:
+            raise TypeError(
+                f"Value at path '{path}' has unsupported type "
+                f"{type(value).__name__}. Expected str, int, float, bool, or None."
+            )
+
+        i = end + 2
+
+    return ''.join(result)

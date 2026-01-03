@@ -1,32 +1,34 @@
-"""
-    Hello component routes module.
+# Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE)
 
-    Si no necesitamos un dispatch para ejecutar código python, simplemente se puede usar el catch_all con el dispatcher generico.
-
-    Aquí ilustramos los dos casos
-"""
+"""Hello component routes module."""
 
 from flask import Response, request
 
 from core.dispatcher import Dispatcher  # pylint: disable=import-error
 
 from . import bp  # pylint: disable=no-name-in-module
-from .dispatcher_hellocomp import DispatcherHelloComp  # pylint: disable=import-error
+from .dispatcher_hellocomp import DispatcherHelloComp
 
 
-@bp.route('/test1', defaults={'route': 'test1'}, methods=['GET'])
+# If business logic is needed, use custom route and dispatcher.
+@bp.route("/test1", defaults={"route": "test1"}, methods=["GET"])
 def test1(route) -> Response:
     """Handle test1 requests."""
-    dispatch = DispatcherHelloComp(request, route, bp.current_neutral_route)
-    dispatch.schema_data['dispatch_result'] = "True"
+    dispatch = DispatcherHelloComp(request, route, bp.neutral_route)
+    dispatch.schema_data["dispatch_result"] = dispatch.test1()
     return dispatch.view.render()
 
 
+# If not business logic is needed, use catch-all route and generic dispatcher.
 @bp.route("/", defaults={"route": ""}, methods=["GET"])
 @bp.route("/<path:route>", methods=["GET"])
 def hellocomp_catch_all(route) -> Response:
     """Handle undefined urls."""
-    dispatch = Dispatcher(request, route)
-    dispatch.schema_data["dispatch_result"] = True
-    dispatch.schema_data["current"]["template"]["route"] = bp.current_neutral_route
+
+    # We use the generic dispatcher
+    dispatch = Dispatcher(request, route, bp.neutral_route)
+
+    # # In this case, it can also be done like this
+    # dispatch = DispatcherHelloComp(request, route, bp.neutral_route)
+
     return dispatch.view.render()

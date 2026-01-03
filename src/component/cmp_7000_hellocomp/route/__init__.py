@@ -1,4 +1,6 @@
-"""Info Blueprint Module."""
+
+
+"""Hello Component Blueprint Module."""
 
 from app.components import create_blueprint  # pylint: disable=import-error
 

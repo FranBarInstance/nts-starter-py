@@ -24,22 +24,22 @@
                     "help": {
                         "about": {
                             "text": "About",
-                            "link": "/none/about",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/about",
                             "icon": "x-icon-about"
                         },
                         "help": {
                             "text": "Help",
-                            "link": "/none/help",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/help",
                             "icon": "x-icon-help"
                         },
                         "contact": {
                             "text": "Contact",
-                            "link": "/none/contact",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/contact",
                             "icon": "x-icon-contact"
                         },
                         "legal": {
                             "text": "Legal",
-                            "link": "/none/legal",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/legal",
                             "icon": "x-icon-legal"
                         }
                     }
@@ -48,22 +48,22 @@
                     "help": {
                         "about": {
                             "text": "About",
-                            "link": "/none/about",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/about",
                             "icon": "x-icon-about"
                         },
                         "help": {
                             "text": "Help",
-                            "link": "/none/help",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/help",
                             "icon": "x-icon-help"
                         },
                         "contact": {
                             "text": "Contact",
-                            "link": "/none/contact",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/contact",
                             "icon": "x-icon-contact"
                         },
                         "legal": {
                             "text": "Legal",
-                            "link": "/none/legal",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/legal",
                             "icon": "x-icon-legal"
                         }
                     }

@@ -23,7 +23,7 @@ def handle_exception(e):
         name = "Internal Server Error"
         description = "An internal error occurred in app."
 
-    dispatch = Dispatcher(request, "HTTP_ERROR")
+    dispatch = Dispatcher(request, "HTTP_ERROR", bp.neutral_route)
     return dispatch.view.render_error(code, name, description)
 
 
@@ -42,7 +42,7 @@ def error_test_403():
 @bp.route("/404")
 def error_test_404():
     """test template error 404."""
-    dispatch = Dispatcher(request, "404")
+    dispatch = Dispatcher(request, "404", bp.neutral_route)
     return dispatch.view.render_error(
         404, "Not Found", "The requested resource was not found."
     )

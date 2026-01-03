@@ -1,10 +1,23 @@
 {
+    "__comment_:trans": "This translation will be available for the entire Component",
     "trans": {
-        "en": {},
         "es": {
-            "Test 1": "Prueba 1",
-            "Test 2": "Prueba 2",
-            "Test 404": "Prueba 404"
+            "Hello Component": "Componente Hola",
+            "Component example, ilustrates the basic structure of a component": "Componente ejemplo, ilustra la estructura básica de un componente",
+            "Example of a simple component": "Ejemplo de un componente simple",
+            "Hello from hello component": "Hola desde el componente hello"
+        },
+        "fr": {
+            "Hello Component": "Composant Bonjour",
+            "Component example, ilustrates the basic structure of a component": "Composant exemple, illustre la structure de base d'un composant",
+            "Example of a simple component": "Exemple d'un composant simple",
+            "Hello from hello component": "Bonjour du composant hello"
+        },
+        "de": {
+            "Hello Component": "Hallo-Komponente",
+            "Component example, ilustrates the basic structure of a component": "Komponentenbeispiel, veranschaulicht die grundlegende Struktur einer Komponente",
+            "Example of a simple component": "Komponentenbeispiel, veranschaulicht die grundlegende Struktur einer Komponente",
+            "Hello from hello component": "Hallo vom hello component"
         }
     }
 }

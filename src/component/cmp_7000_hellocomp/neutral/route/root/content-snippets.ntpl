@@ -1,10 +1,18 @@
 {:* Copyright (C) 2025 https://github.com/FranBar1966/neutral-pwa-py (See LICENCE) *:}
 
+{:*
+    Data for this route
+    -------------------
+*:}
 {:data; #/data.json :}
 
+{:*
+    Main content
+    ------------
+*:}
 {:snip; current:template:body-main-content >>
     <div class="container">
-        <h3>{:;hello-component->hello:}</h3>
+        <h3>{:trans; {:;hello-component->hello:} :}</h3>
         <p>{:trans; Example of a simple component :}</p>
     </div>
     <div class="container mt-5">
@@ -12,4 +20,16 @@
     </div>
 :}
 
+{:*
+    This file does not produce output. By placing {:;:} at the end we force output
+    so that constructs like the following work:
+
+        {:include;
+            file-snippets.ntpl
+        :}{:else;
+            {:exit; 404 :}
+        :}
+
+    Note: {:;:} or {:^;:} to force output
+*:}
 {:^;:}

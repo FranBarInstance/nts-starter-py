@@ -1,13 +1,17 @@
 # Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE)
 
-"""rrss"""
+"""Hello component dispatcher."""
 
 from core.dispatcher import Dispatcher  # pylint: disable=import-error
 
 
 class DispatcherHelloComp(Dispatcher):
-    """Read RSS."""
+    """Hello component dispatcher."""
 
-    def __init__(self, request, route, current_neutral_route):
-        super().__init__(request, route)
-        self.schema_data['current']['template']['route'] = current_neutral_route
+    def __init__(self, request, comp_route, neutral_route=None):
+        super().__init__(request, comp_route, neutral_route)
+        self.schema_local_data['foo'] = "bar"
+
+    def test1(self):
+        """business logic for test1 requests."""
+        return True

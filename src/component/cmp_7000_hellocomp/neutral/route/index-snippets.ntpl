@@ -1,24 +1,33 @@
 {:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
 
 {:*
+    Data for all {:;hellocomp_0yt2sa->manifest->route:}/* routes
+    ------------------------------------------------------------
+*:}
+{:data; {:flg; require :} >> #/data.json :}
+
+{:*
     Locale for all {:;hellocomp_0yt2sa->manifest->route:}/* routes
     -----------------------------------------------------------------------
 *:}
-{:locale; {:flg; require :} #/locale.json :}
-
+{:locale; {:flg; require :} >> #/locale.json :}
 
 {:*
-    Example snippet for all {:;hellocomp_0yt2sa->manifest->route:}/* routes
+    Snippet for all {:;hellocomp_0yt2sa->manifest->route:}/* routes
     -----------------------------------------------------------------------
 *:}
 {:snip; hellocomp_0yt2sa-info >>
 <pre>
-<strong>COMPONENT INFO</strong>
-This is the path: {:;CONTEXT->PATH:}
-Component name: {:;hellocomp_0yt2sa->name:}
-Name: {:;hellocomp_0yt2sa->manifest->name:}
-Description: {:;hellocomp_0yt2sa->manifest->description:}
-Version: {:;hellocomp_0yt2sa->manifest->version:}
-Manage Route: {:;hellocomp_0yt2sa->manifest->route:}
+  <strong>RESULT</strong>
+  foo: {:;local::foo:}
+  dispatch_result: {:bool; dispatch_result >> True :}{:else; False :}
+
+  <strong>COMPONENT INFO</strong>
+  This is the path: {:;CONTEXT->PATH:}
+  Component name: {:;hellocomp_0yt2sa->name:}
+  Name: {:;hellocomp_0yt2sa->manifest->name:}
+  Description: {:;hellocomp_0yt2sa->manifest->description:}
+  Version: {:;hellocomp_0yt2sa->manifest->version:}
+  Manage Route: {:;hellocomp_0yt2sa->manifest->route:}
 </pre>
 :}

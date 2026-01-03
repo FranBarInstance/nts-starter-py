@@ -9,7 +9,7 @@ from importlib import import_module
 from flask import Blueprint
 
 from constants import UUID_MAX_LEN, UUID_MIN_LEN
-from utils.utils import merge_dict
+from utils.utils import merge_dict, parse_vars
 
 from .config import Config
 
@@ -39,6 +39,7 @@ class Components:
         self._register_blueprints()
         self._component_snip()
         self._set_data()
+        self._parse_schema_vars()
 
     def _register_manifest(self):
         """Registers manifests for valid components."""
@@ -181,6 +182,9 @@ class Components:
             self.schema["data"]["core_components"].append(uuid)
             self.schema["data"].setdefault(uuid, {}).update(comp)
 
+    def _parse_schema_vars(self):
+        self.schema = json.loads(parse_vars(json.dumps(self.schema), self.schema))
+
     def get_custom(self, path, name):
         """Retrieves and validates manifest.json for a component."""
         custom_path = os.path.join(path, "custom.json")
@@ -274,7 +278,7 @@ def create_blueprint(component, component_schema):
     bp.component = component
     bp.schema = component_schema
     bp.manifest = manifest
-    bp.current_neutral_route = os.path.join(component["path"], "neutral", "route")
+    bp.neutral_route = os.path.join(component["path"], "neutral", "route")
 
     return bp
 
@@ -289,6 +293,7 @@ def set_current_template(component, component_schema):
     component_schema['data'].setdefault('current', {})
     component_schema['data']['current'].setdefault('template', {})
     component_schema['data']['current']['template']['dir'] = template_dir
-    component_schema['data']['current']['template']['route'] = template_route
+    component_schema['data']['NEUTRAL_ROUTE'] = template_route
+    component_schema['data']['COMP_ROUTE'] = Config.COMP_ROUTE_ROOT
 
     return template_dir, template_route

@@ -13,6 +13,8 @@ class Config: # pylint: disable=too-few-public-methods
     BASE_DIR = SRC_DIR
     VENV_DIR = VENV_DIR
 
+    COMP_ROUTE_ROOT = "root"
+
     DEBUG_EXPIRE = int(config.get('DEBUG_EXPIRE'))
     DEBUG_FILE = config.get('DEBUG_FILE')
 

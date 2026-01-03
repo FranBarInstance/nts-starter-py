@@ -18,15 +18,18 @@ from .template import Template
 class Dispatcher:
     """Main request dispatcher class."""
 
-    def __init__(self, req, route, ltoken=None, ftoken_field_name=None):
+    def __init__(self, req, comp_route, neutral_route=None, ltoken=None, ftoken_field_name=None):
         """Initialize dispatcher with request, route and optional tokens."""
         self.req = req
-        self._route = route.strip('/\\')
+        self._comp_route = f'{Config.COMP_ROUTE_ROOT}/{comp_route}'.strip("/")
+        self._neutral_route = neutral_route
         self._ltoken = ltoken
         self._ftoken_name = ftoken_field_name
-        self.schema = Schema(self.req, self._route)
+        self.schema = Schema(self.req)
         self.schema_data = self.schema.properties['data']
         self.schema_local_data = self.schema.properties['inherit']['data']
+        self.schema_data['COMP_ROUTE'] = self._comp_route
+        self.schema_data['NEUTRAL_ROUTE'] = self._neutral_route or self.schema_data['NEUTRAL_ROUTE']
         self.ajax_request = self.schema_data['CONTEXT']['HEADERS'].get("Requested-With-Ajax") or False
         self.session = Session(self.schema_data['CONTEXT']['SESSION'])
         self.user = User()

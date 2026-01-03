@@ -10,7 +10,6 @@ from . import bp  # pylint: disable=no-name-in-module
 @bp.route('/', defaults={'route': ''}, endpoint='home', methods=['GET'])
 def home(route) -> Response:
     """Route handler for the home page."""
-    dispatch = Dispatcher(request, route)
-    dispatch.schema_data['current']['template']['route'] = bp.current_neutral_route
+    dispatch = Dispatcher(request, route, bp.neutral_route)
     dispatch.schema_data['dispatch_result'] = True
     return dispatch.view.render()
