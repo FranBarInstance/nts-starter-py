@@ -1,0 +1,75 @@
+{
+    "inherit": {
+        "data": {
+            "drawer": {
+                "menu": {
+                    "session:": {
+                        "help": {
+                            "name": "Help",
+                            "tabs": "info",
+                            "icon": "x-icon-help"
+                        }
+                    },
+                    "session:true": {
+                        "help": {
+                            "name": "Help",
+                            "tabs": "info",
+                            "icon": "x-icon-help"
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "session:": {
+                    "info": {
+                        "about": {
+                            "text": "About",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/about",
+                            "icon": "x-icon-about"
+                        },
+                        "help": {
+                            "text": "Help",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/help",
+                            "icon": "x-icon-help"
+                        },
+                        "contact": {
+                            "text": "Contact",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/contact",
+                            "icon": "x-icon-contact"
+                        },
+                        "legal": {
+                            "text": "Legal",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/legal",
+                            "icon": "x-icon-legal"
+                        }
+                    }
+                },
+                "session:true": {
+                    "info": {
+                        "about": {
+                            "text": "About",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/about",
+                            "icon": "x-icon-about"
+                        },
+                        "help": {
+                            "text": "Help",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/help",
+                            "icon": "x-icon-help"
+                        },
+                        "contact": {
+                            "text": "Contact",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/contact",
+                            "icon": "x-icon-contact"
+                        },
+                        "legal": {
+                            "text": "Legal",
+                            "link": "[:;data->info_0yt2sa->manifest->route:]/legal",
+                            "icon": "x-icon-legal"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {}
+}

@@ -1,0 +1,33 @@
+{:* Copyright (C) 2025 https://github.com/FranBar1966/neutral-pwa-py (See LICENCE) *:}
+
+{:data; #/data.json :}
+
+{:snip; current:template:body-main-content >>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam auctor, nisl eget ultricies tincidunt.</p>
+    </section>
+
+    <section>
+        <h2>Consectetur Adipiscing</h2>
+        <p> Quisque ultricies nunc lobortis odio porta gravida. Ut condimentum suscipit sapien.</p>
+        <article>
+            <h3>Nullam Auctor</h3>
+            <p>Sed congue nisi hendrerit libero vestibulum, ut fermentum mi congue. Ut quis porttitor quam, id aliquam massa. Proin in risus mattis nulla viverra laoreet. Quisque ultricies nunc lobortis odio porta gravida. Ut condimentum suscipit sapien. Sed vulputate at libero sit amet pretium. Morbi elementum magna malesuada, pretium justo vitae, finibus ligula.</p>
+            <p>Curabitur in maximus risus. Aliquam erat volutpat. Sed vel magna et diam tristique euismod. Vestibulum faucibus erat dolor, eu congue elit imperdiet at. Suspendisse congue enim vel imperdiet fermentum.</p>
+            <p>Phasellus venenatis, justo sit amet placerat rhoncus, tellus nisl placerat quam, vel fringilla ex justo et magna. Nam lacus lectus, scelerisque in imperdiet sit amet, sodales quis leo. Duis aliquet mi a sodales dictum. Nullam elementum leo a orci ullamcorper tempus ac vitae neque.</p>
+        </article>
+        <article>
+            <h3>Nisl Eget Ultricies</h3>
+            <p>Donec erat nisl, iaculis nec varius vitae, pellentesque ut dolor. Vestibulum in diam sapien. Aliquam vitae libero vitae enim aliquet dictum efficitur ultrices velit. Integer luctus suscipit lacus id tristique. Sed enim dolor, sodales pharetra mauris a, ullamcorper dictum sapien. Suspendisse semper eu turpis id accumsan.</p>
+            <p>Aliquam porta cursus ante vitae bibendum. Donec quis nisl vel turpis porttitor aliquam. Mauris risus arcu, ultrices quis lobortis non, accumsan id velit. Nunc egestas nibh sagittis erat vestibulum vehicula. Vestibulum ac nisi et purus semper semper. Proin dictum risus ac lacinia varius. Suspendisse vulputate nisi consectetur quam tristique molestie. Nulla nec fermentum velit, nec venenatis erat. Aliquam erat volutpat. Ut vitae est id turpis pellentesque tincidunt.</p>
+        </article>
+    </section>
+    <section>
+        <h4>Text test with long words</h4>
+        <p>iaculisnecvariusvitaepellentesqueutdolorVestibulumindiamsapienAliquamvitaeliberovitaeenimaliquetdictumefficiturultricesvelit.Integerluctussuscipitlacusidtristique.Sedenimdolor,sodalespharetramaurisa,ullamcorperdictumsapien.Suspendissesempereuturpisidaccumsan</p>
+    </section>
+:}
+
+
+{:^;:}
