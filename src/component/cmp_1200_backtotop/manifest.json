@@ -3,5 +3,8 @@
     "name": "Back To Top",
     "description": "Provides back to top button and hide navbar",
     "version": "0.0.0",
-    "route": ""
+    "route": "",
+    "required": {
+        "materialicons_0yt2sa": "0.0.x"
+    }
 }
