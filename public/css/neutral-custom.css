@@ -242,3 +242,10 @@
     overflow-wrap: break-word;
     word-break: break-word;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 7px !important;
+        padding-left: 7px !important;
+    }
+}
