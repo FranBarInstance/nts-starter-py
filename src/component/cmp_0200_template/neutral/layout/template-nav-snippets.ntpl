@@ -111,42 +111,44 @@
     Lateral bar
 *:}
 {:snip; current:template:body-lateral-bar >>
-    <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 ps-0 link-body-emphasis text-decoration-none border-bottom">
-        <span class="fs-5 {:;local::x-icon-channel:} me-2"></span> <span class="fs-5 fw-semibold">Lorem Ipsum</span>
-    </a>
-    <a href="https://github.com/FranBarInstance/">
-        <img src="https://picsum.photos/300/300" width="100%" alt="Lorem Ipsum">
-    </a>
-    <hr>
-    <div class="list-group list-group-flush border-bottom scrollarea">
-        <a href="https://github.com/FranBarInstance/" class="list-group-item list-group-item-action py-3 lh-sm">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-                <strong class="mb-1">Pellentesque nec urna erat</strong>
-                <small class="text-body-secondary"></small>
-            </div>
-            <div class="col-10 mb-1 small">Vestibulum venenatis id magna eu luctus.</div>
+    <div class="container">
+        <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 ps-0 link-body-emphasis text-decoration-none border-bottom">
+            <span class="fs-5 {:;local::x-icon-channel:} me-2"></span> <span class="fs-5 fw-semibold">Lorem Ipsum</span>
         </a>
-        <a href="https://github.com/FranBarInstance/neutraltemplate" class="list-group-item list-group-item-action py-3 lh-sm">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-                <strong class="mb-1">Nunc porta dolor non</strong>
-                <small class="text-body-secondary"></small>
-            </div>
-            <div class="col-10 mb-1 small">Donec vel pulvinar nunc, nec aliquam erat.</div>
+        <a href="https://github.com/FranBarInstance/">
+            <img src="https://picsum.photos/300/300" width="100%" alt="Lorem Ipsum">
         </a>
-        <a href="https://github.com/FranBarInstance/" class="list-group-item list-group-item-action py-3 lh-sm">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-                <strong class="mb-1">Pellentesque nec urna erat</strong>
-                <small class="text-body-secondary"></small>
-            </div>
-            <div class="col-10 mb-1 small">Vestibulum venenatis id magna eu luctus.</div>
-        </a>
-        <a href="https://github.com/FranBarInstance/neutraltemplate" class="list-group-item list-group-item-action py-3 lh-sm">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-                <strong class="mb-1">Nunc porta dolor non</strong>
-                <small class="text-body-secondary"></small>
-            </div>
-            <div class="col-10 mb-1 small">Donec vel pulvinar nunc, nec aliquam erat.</div>
-        </a>
+        <hr>
+        <div class="list-group list-group-flush border-bottom scrollarea">
+            <a href="https://github.com/FranBarInstance/" class="list-group-item list-group-item-action py-3 lh-sm">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Pellentesque nec urna erat</strong>
+                    <small class="text-body-secondary"></small>
+                </div>
+                <div class="col-10 mb-1 small">Vestibulum venenatis id magna eu luctus.</div>
+            </a>
+            <a href="https://github.com/FranBarInstance/neutraltemplate" class="list-group-item list-group-item-action py-3 lh-sm">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Nunc porta dolor non</strong>
+                    <small class="text-body-secondary"></small>
+                </div>
+                <div class="col-10 mb-1 small">Donec vel pulvinar nunc, nec aliquam erat.</div>
+            </a>
+            <a href="https://github.com/FranBarInstance/" class="list-group-item list-group-item-action py-3 lh-sm">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Pellentesque nec urna erat</strong>
+                    <small class="text-body-secondary"></small>
+                </div>
+                <div class="col-10 mb-1 small">Vestibulum venenatis id magna eu luctus.</div>
+            </a>
+            <a href="https://github.com/FranBarInstance/neutraltemplate" class="list-group-item list-group-item-action py-3 lh-sm">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Nunc porta dolor non</strong>
+                    <small class="text-body-secondary"></small>
+                </div>
+                <div class="col-10 mb-1 small">Donec vel pulvinar nunc, nec aliquam erat.</div>
+            </a>
+        </div>
     </div>
 :}
 
