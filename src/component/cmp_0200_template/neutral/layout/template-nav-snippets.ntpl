@@ -111,7 +111,7 @@
     Lateral bar
 *:}
 {:snip; current:template:body-lateral-bar >>
-    <div class="container">
+    <div class="container p-0">
         <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 ps-0 link-body-emphasis text-decoration-none border-bottom">
             <span class="fs-5 {:;local::x-icon-channel:} me-2"></span> <span class="fs-5 fw-semibold">Lorem Ipsum</span>
         </a>
