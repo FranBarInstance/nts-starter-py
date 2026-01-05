@@ -21,7 +21,7 @@
             },
             "menu": {
                 "session:": {
-                    "info": {
+                    "help": {
                         "about": {
                             "text": "About",
                             "link": "[:;data->info_0yt2sa->manifest->route:]/about",
@@ -45,7 +45,7 @@
                     }
                 },
                 "session:true": {
-                    "info": {
+                    "help": {
                         "about": {
                             "text": "About",
                             "link": "[:;data->info_0yt2sa->manifest->route:]/about",
