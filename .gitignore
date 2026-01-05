@@ -12,6 +12,7 @@
 !/config/README.md
 /storage/*
 !/storage/README.md
+/src/component/cmp_*_rrss*
 
 
 # Byte-compiled / optimized / DLL files
