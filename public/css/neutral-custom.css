@@ -243,9 +243,9 @@
     word-break: break-word;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
-        padding-right: 7px !important;
-        padding-left: 7px !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
     }
-}
+} */
