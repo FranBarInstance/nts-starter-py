@@ -59,6 +59,7 @@
         {:!cache;
             {:snip; comp-debug-button-context :}
             {:snip; comp-debug-button-data :}
+            {:snip; comp-debug-button-local-data :}
         :}
         {:snip; current:template:body-footer :}
         {:snip; current:template:modals :}
