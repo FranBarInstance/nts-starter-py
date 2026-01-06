@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
         {:snip;
-            current-route-title-description
+            current:template:meta-title-description
         :}{:else;
             <title>{:trans; {:;local::current->route->title:} :}</title>
             <meta name="description" content="{:trans; {:;local::current->route->description:} :}" />
