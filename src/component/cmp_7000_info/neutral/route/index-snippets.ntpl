@@ -1,5 +1,7 @@
 {:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
 
+{:include; #/snippets.ntpl :}
+
 {:*
     Disable carousel in all /info routes
     -----------------------------------
