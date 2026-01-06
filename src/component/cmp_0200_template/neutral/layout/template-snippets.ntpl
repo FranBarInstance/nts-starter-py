@@ -44,7 +44,7 @@
     Page heading
     ------------
 *:}
-{:snip; current:template:page-title >>
+{:snip; current:template:page-h1 >>
     {:filled; local::current->route->h1 >>
         <div class="container my-3">
             <h1 class="border-bottom p-2">{:trans; {:;local::current->route->h1:} :}</h1>

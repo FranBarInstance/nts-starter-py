@@ -30,7 +30,7 @@
             {:snip; current:template:main-drawer :}
             {:snip; current:template:body-carousel :}
         :}
-        {:snip; current:template:page-title :}
+        {:snip; current:template:page-h1 :}
         <div class="container mt-4" style="min-height: calc(100vh - 160px);">
             {:snip; theme-body-start :}
             {:snip; current-route-page-title :}

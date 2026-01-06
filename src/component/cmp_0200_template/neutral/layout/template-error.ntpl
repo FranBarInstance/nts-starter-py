@@ -22,7 +22,7 @@
         {:snip; current-theme-body-start :}
         {:snip; current:template:main-navbar :}
         {:snip; current:template:main-drawer :}
-        {:snip; current:template:page-title :}
+        {:snip; current:template:page-h1 :}
         <div class="container mt-4" style="min-height: calc(100vh - 160px);">
             {:snip; theme-body-start :}
             <main class="">
