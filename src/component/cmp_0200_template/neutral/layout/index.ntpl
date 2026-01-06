@@ -41,6 +41,11 @@
 :}
 
 {:*
+    Local overrides
+*:}
+{:include; {:;CURRENT_NEUTRAL_ROUTE:}/custom-snippets.ntpl :}
+
+{:*
     Render theme, ajax requests do not show the theme
 *:}
 {:bool; CONTEXT->HEADERS->Requested-With-Ajax >>

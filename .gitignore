@@ -13,6 +13,8 @@
 /storage/*
 !/storage/README.md
 /src/component/*local/
+/src/component/cmp_*_rrss*/neutral/route/custom-snippets.ntpl
+/src/component/cmp_*_rrss*/custom.json
 
 
 # Byte-compiled / optimized / DLL files
@@ -85,3 +87,4 @@ docs/_build/
 
 # Pyenv
 .python-version
+src/component/cmp_*_rrss*/neutral/route/custom-snippets.ntpl
