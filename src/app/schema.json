@@ -33,8 +33,10 @@
             "UTOKEN": "",
             "ENV": {}
         },
-        "NEUTRAL_ROUTE": "",
-        "COMP_ROUTE": "",
+        "CURRENT_NEUTRAL_ROUTE": "",
+        "CURRENT_COMP_ROUTE": "",
+        "CURRENT_COMP_UUID": "",
+        "CURRENT_COMP_NAME": "",
         "mail_data": {},
         "HTTP_ERROR": {},
         "dispatch_result": false,

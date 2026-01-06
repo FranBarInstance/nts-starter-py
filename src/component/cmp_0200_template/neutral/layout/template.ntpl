@@ -18,7 +18,7 @@
         {:each; local::current->route->meta name content >>
             <meta name="{:;name:}" content="{:;content:}" />
         :}
-        {:each; core_components none component >>
+        {:each; COMPONENTS_MAP_BY_UUID component none >>
             {:snip; current:template:head:{:;component:} :}
         :}
         {:snip; current:template:theme-workaround-css:{:;current->theme->theme:} :}
@@ -65,7 +65,7 @@
         {:snip; current:template:modals :}
         {:snip; neutral.js :}
 
-        {:each; core_components none component >>
+        {:each; COMPONENTS_MAP_BY_UUID component none >>
             {:snip; current:template:body-end:{:;component:} :}
         :}
         <script>var lib_config = { cookie_tab: '{:;TAB_CHANGES_KEY:}', reload_msg: '{:trans; ref:tab-changes:reload_msg :}'};</script>

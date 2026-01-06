@@ -28,13 +28,20 @@ class Dispatcher:
         self.schema = Schema(self.req)
         self.schema_data = self.schema.properties['data']
         self.schema_local_data = self.schema.properties['inherit']['data']
-        self.schema_data['COMP_ROUTE'] = self._comp_route
-        self.schema_data['NEUTRAL_ROUTE'] = self._neutral_route or self.schema_data['NEUTRAL_ROUTE']
         self.ajax_request = self.schema_data['CONTEXT']['HEADERS'].get("Requested-With-Ajax") or False
         self.session = Session(self.schema_data['CONTEXT']['SESSION'])
         self.user = User()
         self.view = Template(self.schema)
+        self._set_current_comp()
         self.common()
+
+    def _set_current_comp(self) -> None:
+        self.schema_data['CURRENT_COMP_ROUTE'] = self._comp_route
+        self.schema_data['CURRENT_COMP_ROUTE_SANITIZED'] = self._comp_route.replace("/", ":")
+        self.schema_data['CURRENT_NEUTRAL_ROUTE'] = self._neutral_route or self.schema_data['CURRENT_NEUTRAL_ROUTE']
+        name, uuid = self.extract_comp_from_path(self.schema_data['CURRENT_NEUTRAL_ROUTE'])
+        self.schema_data['CURRENT_COMP_NAME'] = name
+        self.schema_data['CURRENT_COMP_UUID'] = uuid
 
     def common(self) -> None:
         """Perform common initialization tasks for all requests."""
@@ -89,3 +96,14 @@ class Dispatcher:
 
         if not self.ajax_request:
             self.view.add_cookie({**utoken_cookie})
+
+    def extract_comp_from_path(self, path) -> tuple[str | None, str | None]:
+        """Extract component name and UUID from path."""
+
+        if "/component/cmp_" in path:
+            part = path.split("component/cmp_")[1]
+            name = 'cmp_' + part.split('/')[0]
+        else:
+            return None, None
+
+        return name, self.schema_data['COMPONENTS_MAP_BY_NAME'][name]

@@ -29,6 +29,9 @@
 
   <strong>COMPONENT INFO</strong>
   This is the path: {:;CONTEXT->PATH:}
+  CURRENT_COMP_ROUTE: {:;CURRENT_COMP_ROUTE:}
+  CURRENT_COMP_UUID: {:;CURRENT_COMP_UUID:}
+  CURRENT_COMP_NAME: {:;CURRENT_COMP_NAME:}
   Component name: {:;hellocomp_0yt2sa->name:}
   Name: {:;hellocomp_0yt2sa->manifest->name:}
   Description: {:;hellocomp_0yt2sa->manifest->description:}

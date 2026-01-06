@@ -29,13 +29,13 @@
 {:*
     Route snippets if it exists
 *:}
-{:include; {:;NEUTRAL_ROUTE:}/index-snippets.ntpl :}
+{:include; {:;CURRENT_NEUTRAL_ROUTE:}/index-snippets.ntpl :}
 
 {:*
     Content of the route or 404
 *:}
 {:include;
-    {:;NEUTRAL_ROUTE:}/{:;COMP_ROUTE:}/content-snippets.ntpl
+    {:;CURRENT_NEUTRAL_ROUTE:}/{:;CURRENT_COMP_ROUTE:}/content-snippets.ntpl
 :}{:else;
     {:exit; 404 :}
 :}

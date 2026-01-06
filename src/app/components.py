@@ -185,11 +185,15 @@ class Components:
         }
 
     def _set_data(self):
-        self.schema["data"]["core_components"] = []
+        self.schema["data"]["COMPONENTS_MAP_BY_NAME"] = {}
+        self.schema["data"]["COMPONENTS_MAP_BY_UUID"] = {}
 
         for uuid, comp in self.collection.items():
-            self.schema["data"]["core_components"].append(uuid)
+            name = comp["name"]
+            self.schema["data"]["COMPONENTS_MAP_BY_NAME"][name] = uuid
+            self.schema["data"]["COMPONENTS_MAP_BY_UUID"][uuid] = name
             self.schema["data"].setdefault(uuid, {}).update(comp)
+            self.schema["data"].setdefault(name, {}).update(comp)
 
     def _parse_schema_vars(self):
         self.schema = json.loads(parse_vars(json.dumps(self.schema), self.schema))
@@ -304,7 +308,7 @@ def set_current_template(component, component_schema):
     component_schema['data'].setdefault('current', {})
     component_schema['data']['current'].setdefault('template', {})
     component_schema['data']['current']['template']['dir'] = template_dir
-    component_schema['data']['NEUTRAL_ROUTE'] = template_route
-    component_schema['data']['COMP_ROUTE'] = Config.COMP_ROUTE_ROOT
+    component_schema['data']['CURRENT_NEUTRAL_ROUTE'] = template_route
+    component_schema['data']['CURRENT_COMP_ROUTE'] = Config.COMP_ROUTE_ROOT
 
     return template_dir, template_route
