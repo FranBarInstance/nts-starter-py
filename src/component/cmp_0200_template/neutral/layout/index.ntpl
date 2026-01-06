@@ -41,7 +41,7 @@
 :}
 
 {:*
-    Local overrides
+    For local overwriting
 *:}
 {:include; {:;CURRENT_NEUTRAL_ROUTE:}/custom-snippets.ntpl :}
 
