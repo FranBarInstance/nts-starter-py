@@ -3,9 +3,9 @@
 **/.env*
 **/.venv*
 **/venv*
+**/___*
 /.vscode
 /src/wsgi_test.py
-/src/component/__*
 /tmp/*
 !/tmp/README.md
 /config/*
