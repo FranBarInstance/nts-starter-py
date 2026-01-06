@@ -1,0 +1,7 @@
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
+
+{:*
+    Disable carousel in all /info routes
+    -----------------------------------
+*:}
+{:snip; current:template:body-carousel >> :}
