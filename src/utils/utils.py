@@ -31,13 +31,18 @@ def merge_dict(a, b):
 
     def recursive_merge(target, source):
         for key, value in source.items():
-            if key in target and isinstance(target[key], dict) and isinstance(value, dict):
+            if (
+                key in target
+                and isinstance(target[key], dict)
+                and isinstance(value, dict)
+            ):
                 recursive_merge(target[key], value)
             else:
                 target[key] = value
         return target
 
     recursive_merge(a, b)
+
 
 def parse_vars(template, data):
     """Parse variables in template with [:; ... :] delimiters and "->" for nested keys."""
@@ -49,7 +54,7 @@ def parse_vars(template, data):
     i = 0
 
     while i < len(template):
-        start = template.find('[:;', i)
+        start = template.find("[:;", i)
 
         if start == -1:
             result.append(template[i:])
@@ -57,15 +62,15 @@ def parse_vars(template, data):
 
         result.append(template[i:start])
 
-        end = template.find(':]', start + 3)
+        end = template.find(":]", start + 3)
 
         if end == -1:
             raise ValueError(f"Unclosed delimiter at position {start}")
 
-        path = template[start + 3:end]
+        path = template[start + 3 : end]
 
-        if '->' in path:
-            keys = [k.strip() for k in path.split('->')]
+        if "->" in path:
+            keys = [k.strip() for k in path.split("->")]
         else:
             keys = [path.strip()]
 
@@ -77,7 +82,7 @@ def parse_vars(template, data):
             if isinstance(value, dict) and key in value:
                 value = value[key]
             else:
-                traversed = '->'.join(keys[:idx]) if idx > 0 else 'root'
+                traversed = "->".join(keys[:idx]) if idx > 0 else "root"
                 raise KeyError(
                     f"Key '{key}' not found at '{traversed}'. "
                     f"Available keys: {list(value.keys()) if isinstance(value, dict) else 'N/A'}. "
@@ -85,7 +90,7 @@ def parse_vars(template, data):
                 )
 
         if isinstance(value, (str, int, float, bool, type(None))):
-            result.append(str(value) if value is not None else '')
+            result.append(str(value) if value is not None else "")
         else:
             raise TypeError(
                 f"Value at path '{path}' has unsupported type "
@@ -94,4 +99,4 @@ def parse_vars(template, data):
 
         i = end + 2
 
-    return ''.join(result)
+    return "".join(result)
