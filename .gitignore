@@ -3,7 +3,7 @@
 **/.env*
 **/.venv*
 **/venv*
-**/___*
+**/____*
 /.vscode
 /src/wsgi_test.py
 /tmp/*
