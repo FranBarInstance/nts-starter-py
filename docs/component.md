@@ -45,6 +45,7 @@ src/component/cmp_name/
     ├── component-init.ntpl           # Global snippets (app-wide)
     └── route/                        # Component templates
         ├── index-snippets.ntpl       # Snippets shared by this component
+        ├── custom-snippets.ntpl      # Local overrides (for users)
         ├── locale.json               # Translations
         └── root/                     # Pages mapping
             └── content-snippets.ntpl # Main content
