@@ -1,17 +1,39 @@
 {
     "inherit": {
+        "locale": {
+            "trans": {
+                "es": {
+                    "About": "Acerca de",
+                    "Help": "Ayuda",
+                    "Contact": "Contacto",
+                    "Legal": "Legal"
+                },
+                "fr": {
+                    "About": "À propos",
+                    "Help": "Aide",
+                    "Contact": "Contact",
+                    "Legal": "Mentions légales"
+                },
+                "de": {
+                    "About": "Über",
+                    "Help": "Hilfe",
+                    "Contact": "Kontakt",
+                    "Legal": "Rechtliches"
+                }
+            }
+        },
         "data": {
             "drawer": {
                 "menu": {
                     "session:": {
-                        "help": {
+                        "info": {
                             "name": "Help",
                             "tabs": "info",
                             "icon": "x-icon-help"
                         }
                     },
                     "session:true": {
-                        "help": {
+                        "info": {
                             "name": "Help",
                             "tabs": "info",
                             "icon": "x-icon-help"
@@ -21,7 +43,7 @@
             },
             "menu": {
                 "session:": {
-                    "help": {
+                    "info": {
                         "about": {
                             "text": "About",
                             "link": "[:;data->info_0yt2sa->manifest->route:]/about",
@@ -45,7 +67,7 @@
                     }
                 },
                 "session:true": {
-                    "help": {
+                    "info": {
                         "about": {
                             "text": "About",
                             "link": "[:;data->info_0yt2sa->manifest->route:]/about",

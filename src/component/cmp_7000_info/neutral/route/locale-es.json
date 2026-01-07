@@ -1,0 +1,11 @@
+{
+    "__comment_:trans": "This translation will be available for the entire Component",
+    "trans": {
+        "es": {
+            "About": "Acerca de",
+            "Help": "Ayuda",
+            "Contact": "Contacto",
+            "Legal": "Legal"
+        }
+    }
+}
