@@ -3,22 +3,25 @@
         "locale": {
             "trans": {
                 "es": {
+                    "Information": "Información",
                     "About": "Acerca de",
                     "Help": "Ayuda",
                     "Contact": "Contacto",
-                    "Legal": "Legal"
+                    "Legal": "Aviso legal"
                 },
                 "fr": {
+                    "Information": "Informations",
                     "About": "À propos",
                     "Help": "Aide",
                     "Contact": "Contact",
                     "Legal": "Mentions légales"
                 },
                 "de": {
+                    "Information": "Informationen",
                     "About": "Über",
                     "Help": "Hilfe",
                     "Contact": "Kontakt",
-                    "Legal": "Rechtliches"
+                    "Legal": "Impressum"
                 }
             }
         },
@@ -27,14 +30,14 @@
                 "menu": {
                     "session:": {
                         "info": {
-                            "name": "Help",
+                            "name": "Information",
                             "tabs": "info",
                             "icon": "x-icon-help"
                         }
                     },
                     "session:true": {
                         "info": {
-                            "name": "Help",
+                            "name": "Information",
                             "tabs": "info",
                             "icon": "x-icon-help"
                         }

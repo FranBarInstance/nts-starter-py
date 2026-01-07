@@ -34,35 +34,6 @@
             }
         },
         "data": {
-            "drawer": {
-                "menu": {
-                    "session:": {
-                        "main": {},
-                        "user": {},
-                        "theme": {},
-                        "info": {}
-                    },
-                    "session:true": {
-                        "main": {},
-                        "user": {},
-                        "theme": {},
-                        "info": {}
-                    }
-                }
-            },
-            "navbar": {
-                "menu": {
-                    "session:": {
-                        "signin": {},
-                        "signup": {},
-                        "language": {}
-                    },
-                    "session:true": {
-                        "signoff": {},
-                        "language": {}
-                    }
-                }
-            },
             "current": {
                 "route": {
                     "title": "Neutral TS PWA !",
