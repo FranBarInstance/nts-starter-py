@@ -1,4 +1,4 @@
-{:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
 
 {:+bool; pwa_0yt2sa->enable >>
     {:include; {:flg; require :} >> {:;pwa_0yt2sa->path:}/neutral/snippets.ntpl :}

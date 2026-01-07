@@ -1,4 +1,4 @@
-{:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
 
 {:snip; settheme_0yt2sa-menu-theme >>
     <a title="{:trans; Theme :}" class="list-group-item list-group-item-action item-toggle" data-bs-toggle="collapse" data-bs-target="#menu-drawer-themes-theme-collapse">

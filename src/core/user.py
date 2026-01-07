@@ -1,4 +1,4 @@
-# Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE)
+# Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE)
 
 """Module for handling user operations"""
 

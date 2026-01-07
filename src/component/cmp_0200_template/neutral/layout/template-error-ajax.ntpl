@@ -1,4 +1,4 @@
-{:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
 
 <div class="text-center my-2">
     <h6 class="border-bottom pb-2">{:trans; Error loading this complement :}</h6>

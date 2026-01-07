@@ -1,4 +1,4 @@
-/*! See: https://github.com/FranBarInstance/neutral-pwa-py */
+/*! See: https://github.com/FranBarInstance/nts-starter-py */
 
 
 (function () {

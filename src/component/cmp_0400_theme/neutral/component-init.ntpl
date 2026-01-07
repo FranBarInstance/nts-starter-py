@@ -1,4 +1,4 @@
-{:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
 
 {:snip; current:template:head:theme_0yt2sa >>
     <link rel="stylesheet" href="{:;current->site->static:}bootswatch-5/css/{:;current->theme->theme:}/bootstrap.min.css" />
