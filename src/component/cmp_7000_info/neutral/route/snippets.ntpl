@@ -2,7 +2,7 @@
 
 {:snip; info:sample-body-main-content >>
     <div class="lead text-muted">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+        <p>{:trans; {:;local::current->route->description:} :}</p>
     </div>
     <section class="mb-3">
         <div class="row">

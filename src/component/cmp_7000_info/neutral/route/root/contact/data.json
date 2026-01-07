@@ -2,8 +2,8 @@
     "data": {
         "current": {
             "route": {
-                "title": "Neutral TS PWA Contact",
-                "description": "Neutral TS Skeleton for PWA in Python Contact",
+                "title": "Contact Neutral TS PWA",
+                "description": "Contact Neutral TS PWA Skeleton for PWA in Python",
                 "h1": "Contact"
             }
         }
