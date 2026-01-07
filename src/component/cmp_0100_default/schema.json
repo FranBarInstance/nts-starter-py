@@ -34,16 +34,33 @@
             }
         },
         "data": {
-            "navbar": {
-                "menu": {
-                    "session:": {},
-                    "session:true": {}
-                }
-            },
             "drawer": {
                 "menu": {
-                    "session:": {},
-                    "session:true": {}
+                    "session:": {
+                        "main": {},
+                        "user": {},
+                        "theme": {},
+                        "info": {}
+                    },
+                    "session:true": {
+                        "main": {},
+                        "user": {},
+                        "theme": {},
+                        "info": {}
+                    }
+                }
+            },
+            "navbar": {
+                "menu": {
+                    "session:": {
+                        "signin": {},
+                        "signup": {},
+                        "language": {}
+                    },
+                    "session:true": {
+                        "signoff": {},
+                        "language": {}
+                    }
                 }
             },
             "current": {

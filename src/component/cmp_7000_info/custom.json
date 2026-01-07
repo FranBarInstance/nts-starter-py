@@ -1,7 +1,0 @@
-{
-    "__comment_:custom": "Overwriting shema and manifest values",
-    "schema": {},
-    "manifest": {
-        "route": "/info"
-    }
-}
