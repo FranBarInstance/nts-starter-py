@@ -1,5 +1,4 @@
-/*! See: https://github.com/FranBarInstance/nts-starter-py */
-
+/*! See: https://github.com/FranBarInstance/neutral-pwa-py */
 
 (function () {
     'use strict';
@@ -51,7 +50,9 @@
     }
     currentMainNavbarHeight();
     window.addEventListener('load', (event) => {
-        currentMainNavbarHeight();
+        setTimeout(function(){
+            currentMainNavbarHeight();
+        }, 50);
     });
     window.addEventListener('resize', (event) => {
         setTimeout(function(){

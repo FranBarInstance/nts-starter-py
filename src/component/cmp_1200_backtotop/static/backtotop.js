@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
     let upScrollTop = 0;
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         oldOpacity = window.getComputedStyle(element).opacity;
     }
 
-    // Back to top button
     const backToTop = document.getElementById('back-to-top');
     if (backToTop) {
         backToTop.style.display = 'none';
@@ -87,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Link click handler
     const links = document.querySelectorAll('a');
     const thisSite = window.location.origin;
     links.forEach(link => {
@@ -109,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Window resize handler
     window.addEventListener('resize', function() {
         const selectorElements = document.querySelectorAll('.navbar');
         selectorElements.forEach(el => {
@@ -117,4 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
             el.classList.remove('reduce-nav');
         });
     });
+
+
+    setTimeout(function(){
+        window.dispatchEvent(new Event('resize'));
+    }, 10);
 });
