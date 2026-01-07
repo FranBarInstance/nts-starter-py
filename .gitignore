@@ -16,16 +16,10 @@
 /src/component/cmp_*_rrss*/neutral/route/custom-snippets.ntpl
 /src/component/cmp_*_rrss*/custom.json
 
-
-# Byte-compiled / optimized / DLL files
+.python-version
 __pycache__/
 .pytest_cache/
 *.py[cod]
-
-# C extensions
-*.so
-
-# Distribution / packaging
 .Python
 .venv/
 env/
@@ -46,12 +40,10 @@ venv/
 .installed.cfg
 *.egg
 
-# Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 pip-selfcheck.json
 
-# Unit test / coverage reports
 htmlcov/
 .tox/
 .coverage
@@ -59,32 +51,9 @@ htmlcov/
 nosetests.xml
 coverage.xml
 
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Rope
-.ropeproject
-
-# Django stuff:
 *.log
 *.pot
 
 .DS_Store
-
-# Sphinx documentation
 docs/_build/
-
-# PyCharm
 .idea/
-
-# VSCode
-.vscode/
-
-# Pyenv
-.python-version
-src/component/cmp_*_rrss*/neutral/route/custom-snippets.ntpl
