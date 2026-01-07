@@ -6,8 +6,8 @@
     "start_url": "/?pwa=1",
     "display": "standalone",
     "scope": "/",
-    "background_color": "{:;pwa_0yt2sa->background_color:}",
-    "theme_color": "{:;pwa_0yt2sa->theme_color:}",
+    "background_color": "{:;pwa_0yt2sa->manifest->config->background_color:}",
+    "theme_color": "{:;pwa_0yt2sa->manifest->config->theme_color:}",
     "icons": [
         {
             "src": "/pwa/32.png",

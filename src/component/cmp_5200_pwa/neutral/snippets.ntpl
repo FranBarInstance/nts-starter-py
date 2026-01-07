@@ -4,9 +4,9 @@
     {:;:}
     <meta name="application-name" content="{:trans; {:;current->site->name:} :}" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="{:;pwa_0yt2sa->theme_color:}" />
-    <meta name="msapplication-TileColor" content="{:;pwa_0yt2sa->theme_color:}" />
-    <meta name="background-color" content="{:;pwa_0yt2sa->background_color:}" />
+    <meta name="theme-color" content="{:;pwa_0yt2sa->manifest->config->theme_color:}" />
+    <meta name="msapplication-TileColor" content="{:;pwa_0yt2sa->manifest->config->theme_color:}" />
+    <meta name="background-color" content="{:;pwa_0yt2sa->manifest->config->background_color:}" />
     <meta name="apple-mobile-web-app-title" content="{:trans; {:;current->site->name:} :}" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -51,7 +51,7 @@
         });
         function send_cookie_install_count() {
             let pwa_0yt2sa_count = document.cookie.replace(/(?:(?:^|.*;\s*)pwa_0yt2sa_count\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-            let pwa_0yt2sa_times = {:;pwa_0yt2sa->navbar_times:} - 1;
+            let pwa_0yt2sa_times = {:;pwa_0yt2sa->manifest->config->navbar_times:} - 1;
             let currentValue = pwa_0yt2sa_count ? parseInt(pwa_0yt2sa_count) : null;
             if (currentValue === null || currentValue > 0) {
                 let newValue = currentValue === null ? pwa_0yt2sa_times : currentValue - 1;
@@ -65,7 +65,7 @@
     <button style="display: none" class="nav-link mx-auto pwa_0yt2sa-install-show  pwa_0yt2sa-install-click  {:;local::x-icon-webapp:}"> {:trans; Install APP :}</button>
 :}
 
-{:bool; pwa_0yt2sa->navbar_times >>
+{:bool; pwa_0yt2sa->manifest->config->navbar_times >>
     {:!filled; CONTEXT->COOKIES->pwa_0yt2sa_count >>
         {:* first time *:}
         {:snip; {:flg; static :} current:template:main-navbar-bottom-content >>
