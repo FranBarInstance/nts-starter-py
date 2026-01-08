@@ -193,24 +193,23 @@
                         "theme": ""
                     }
                 }
+            },
+            "current": {
+                "theme":  {
+                    "theme": "flatly",
+                    "color": "primary",
+                    "allow_themes": [
+                        "flatly"
+                    ],
+                    "allow_colors": [
+                        "primary"
+                    ],
+                    "carousel": [
+                        "/img/carousel.jpg"
+                    ]
+                }
             }
         }
     },
-    "data": {
-        "current": {
-            "theme":  {
-                "theme": "flatly",
-                "color": "primary",
-                "allow_themes": [
-                    "flatly"
-                ],
-                "allow_colors": [
-                    "primary"
-                ],
-                "carousel": [
-                    "/img/carousel.jpg"
-                ]
-            }
-        }
-    }
+    "data": {}
 }

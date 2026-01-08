@@ -33,7 +33,7 @@
     Main navbar
 *:}
 {:snip; current:template:main-navbar >>
-    <nav id="main-navbar" class="main-navbar main-navbar-visible d-block {:;local::theme_config->{:;current->theme->theme:}->{:;current->theme->color:}->class:} {:;local::theme-body-navbar-class :} {:;local::theme-body-navbar-size :}" data-bs-theme="{:;local::theme_config->{:;current->theme->theme:}->{:;current->theme->color:}->theme:}">
+    <nav id="main-navbar" class="main-navbar main-navbar-visible d-block {:;local::theme_config->{:;local::current->theme->theme:}->{:;local::current->theme->color:}->class:} {:;local::theme-body-navbar-class :} {:;local::theme-body-navbar-size :}" data-bs-theme="{:;local::theme_config->{:;local::current->theme->theme:}->{:;local::current->theme->color:}->theme:}">
         <div class="container">
             <button class="navbar-nav btn border-0 shadow-none p-0 px-1 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#theme-drawer" aria-controls="theme-drawer">
                 <span title="{:trans; Menu :}" class="navbar-toggler-icon disabled"></span>

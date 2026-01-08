@@ -16,7 +16,7 @@
         {:each; COMPONENTS_MAP_BY_UUID component none >>
             {:snip; current:template:head:{:;component:} :}
         :}
-        {:snip; current:template:theme-workaround-css:{:;current->theme->theme:} :}
+        {:snip; current:template:theme-workaround-css:{:;local::current->theme->theme:} :}
     </head>
     <body class="{:;local::theme-body-class:}">
         {:snip; current-theme-body-start :}

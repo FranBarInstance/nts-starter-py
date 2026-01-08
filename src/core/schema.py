@@ -20,6 +20,7 @@ class Schema:
         self.headers = req.headers
         self.properties = {}
         self.data = {}
+        self.local_data = {}
         self._default()
         self._general_data()
         self._session()
@@ -30,6 +31,7 @@ class Schema:
     def _default(self) -> None:
         self.properties = copy.deepcopy(current_app.components.schema)
         self.data = self.properties['data']
+        self.local_data = self.properties['inherit']['data']
         self.properties['config']['cache_disable'] = Config.NEUTRAL_CACHE_DISABLE
         self.properties['config']['cache_dir'] = TMP_DIR
 
@@ -116,21 +118,21 @@ class Schema:
             theme
             or self.data['CONTEXT']['GET'].get(Config.THEME_KEY)
             or self.data['CONTEXT']['COOKIES'].get(Config.THEME_KEY)
-            or self.data['current']['theme']['theme']
+            or self.local_data['current']['theme']['theme']
         )
 
         new_theme_color = (
             color
             or self.data['CONTEXT']['GET'].get(Config.THEME_COLOR_KEY)
             or self.data['CONTEXT']['COOKIES'].get(Config.THEME_COLOR_KEY)
-            or self.data['current']['theme']['color']
+            or self.local_data['current']['theme']['color']
         )
 
-        if new_theme in self.data['current']['theme']['allow_themes']:
-            self.data['current']['theme']['theme'] = new_theme
+        if new_theme in self.local_data['current']['theme']['allow_themes']:
+            self.local_data['current']['theme']['theme'] = new_theme
 
-        if new_theme_color in self.data['current']['theme']['allow_colors']:
-            self.data['current']['theme']['color'] = new_theme_color
+        if new_theme_color in self.local_data['current']['theme']['allow_colors']:
+            self.local_data['current']['theme']['color'] = new_theme_color
 
     def merge(self, new_dict):
         """Merge a new dictionary recursively into self.properties"""

@@ -239,30 +239,29 @@
                         "theme": ""
                     }
                 }
+            },
+            "current": {
+                "theme":  {
+                    "allow_themes": [
+                        "flatly",
+                        "zephyr",
+                        "simplex",
+                        "cosmo",
+                        "litera",
+                        "united",
+                        "brite",
+                        "cerulean",
+                        "journal"
+                    ],
+                    "allow_colors": [
+                        "primary",
+                        "dark",
+                        "light",
+                        "tertiary"
+                    ]
+                }
             }
         }
     },
-    "data": {
-        "current": {
-            "theme":  {
-                "allow_themes": [
-                    "flatly",
-                    "zephyr",
-                    "simplex",
-                    "cosmo",
-                    "litera",
-                    "united",
-                    "brite",
-                    "cerulean",
-                    "journal"
-                ],
-                "allow_colors": [
-                    "primary",
-                    "dark",
-                    "light",
-                    "tertiary"
-                ]
-            }
-        }
-    }
+    "data": {}
 }

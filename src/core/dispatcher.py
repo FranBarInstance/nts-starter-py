@@ -57,11 +57,11 @@ class Dispatcher:
                 **session_cookie,
                 Config.THEME_KEY: {
                     "key": Config.THEME_KEY,
-                    "value":  self.schema_data['current']['theme']['theme'],
+                    "value":  self.schema_local_data['current']['theme']['theme'],
                 },
                 Config.THEME_COLOR_KEY: {
                     "key": Config.THEME_COLOR_KEY,
-                    "value":  self.schema_data['current']['theme']['color'],
+                    "value":  self.schema_local_data['current']['theme']['color'],
                 },
                 Config.LANG_KEY: {
                     "key": Config.LANG_KEY,

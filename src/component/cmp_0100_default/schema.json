@@ -35,6 +35,7 @@
         },
         "data": {
             "current": {
+                "theme": {},
                 "route": {
                     "title": "Neutral TS PWA !",
                     "description": "Neutral TS Skeleton for PWA in Python !"
@@ -45,7 +46,6 @@
     "data": {
         "current": {
             "template": {},
-            "theme": {},
             "site": {
                 "title": "Neutral TS PWA !",
                 "description": "Neutral TS Skeleton for PWA in Python !"
