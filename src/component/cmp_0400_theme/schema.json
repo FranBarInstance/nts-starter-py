@@ -1,6 +1,7 @@
 {
     "inherit": {
         "data": {
+            "theme-container-class": "container p-1 p-md-3",
             "theme-body-main-class": "",
             "theme-body-lateral-bar": "",
             "theme-body-class": "",
