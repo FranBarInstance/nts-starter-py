@@ -1,7 +1,7 @@
 {:* Copyright (C) 2025 https://github.com/FranBarInstance/neutral-pwa-py (See LICENCE) *:}
 
 {:snip; current:template:meta-title-description >>
-    <title>{:trans; {:;rrss_name:} :} {:trans; news :} | {:trans; {:;current->site->title:} :}</title>
+    <title>{:trans; {:;rrss_name:} :} {:trans; news :} | {:trans; {:;current->site->name:} :}</title>
     <meta name="description" content="{:trans; RSS news in :} {:trans; {:;rrss_name:} :}" />
 :}
 
