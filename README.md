@@ -84,7 +84,7 @@ The strength of this starter lies in `src/component`. Each folder there is a sel
     *   `neutral/`: HTML templates and snippets.
     *   `static/`: Specific assets (JS/CSS).
 
-You can consult `src/component/cmp_7000_hellocomp/README.md` for a detailed example of a "Hello Component", or the technical documentation in `src/component/README.md`.
+For a detailed example, see the [Hello Component README](src/component/cmp_7000_hellocomp/README.md). For complete technical documentation on the component architecture, refer to [docs/component.md](docs/component.md).
 
 ## Configuration
 
