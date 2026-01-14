@@ -57,7 +57,7 @@ nts-starter-py/
 ├── src/
 │   ├── app/                     # Flask application factory and core configuration
 │   ├── component/               # MODULE COLLECTION (The most important part)
-│   │   ├── cmp_7000_info/       # Example of a full component
+│   │   ├── cmp_7000_hellocomp/  # Example of a full component
 │   │   └── ...                  # Other components (cmp_0100_*, cmp_0200_*, etc.)
 │   ├── core/                    # Core utilities (dispatcher, helpers)
 │   ├── model/                   # Data models
