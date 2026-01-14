@@ -1,0 +1,10 @@
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
+
+{:snip; current:template:head:theme_0yt2sa >>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/{:;local::current->theme->theme:}/bootstrap.min.css">
+    <link rel="stylesheet" href="{:;current->site->static:}css/neutral-custom.min.css" />
+:}
+
+{:snip; current:template:body-end:theme_0yt2sa >>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+:}

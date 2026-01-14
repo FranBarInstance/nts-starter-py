@@ -1,0 +1,9 @@
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
+
+{:*  {:exit; 503 >> Maintenance mode :}  *:}
+
+{:snip; current:template:body-main-content >>
+    hola 503
+:}
+
+{:^;:}

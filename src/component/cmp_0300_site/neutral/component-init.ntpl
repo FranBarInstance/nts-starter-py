@@ -1,0 +1,5 @@
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
+
+{:snip; current:template:body-end:site_0yt2sa >>
+    <script>document.addEventListener('DOMContentLoaded', () => { const icon = document.querySelector(`a[href="?{:;LANG_KEY:}={:lang;:}"] .x-icon`); if (icon) icon.className = '{:;local::x-icon-check:}'; });</script>
+:}

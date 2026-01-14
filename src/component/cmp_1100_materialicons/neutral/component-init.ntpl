@@ -1,0 +1,5 @@
+{:* Copyright (C) 2025 https://github.com/FranBarInstance/nts-starter-py (See LICENCE) *:}
+
+{:snip; current:template:head:materialicons_0yt2sa >>
+    <link rel="stylesheet" href="{:;current->site->static:}materialicons/7.4.47/css/materialdesignicons.min.css" />
+:}

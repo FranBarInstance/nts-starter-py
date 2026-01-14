@@ -1,0 +1,16 @@
+{
+    "uuid": "rrss_0yt2sa",
+    "name": "Read RSS",
+    "description": "Read RSS feed and show it in a list",
+    "version": "0.0.0",
+    "route": "/rrss",
+    "config": {
+        "cache_seconds": 300,
+        "rsss_default": "BBC",
+        "rrss_urls": {
+            "BBC": "https://feeds.bbci.co.uk/news/rss.xml",
+            "TechCrunch": "https://techcrunch.com/feed/",
+            "Bing": "https://www.bing.com/news/search?format=RSS&q=AI&setlang=en"
+        }
+    }
+}
