@@ -1,0 +1,87 @@
+{
+    "inherit": {
+        "locale": {
+            "current": "en",
+            "trans": {
+                "en": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français",
+                    "Language": "Language"
+                },
+                "es": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français",
+                    "Language": "Idioma"
+                },
+                "fr": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français",
+                    "Language": "Langue"
+                },
+                "de": {
+                    "ref:locale:en": "English",
+                    "ref:locale:es": "Español",
+                    "ref:locale:de": "Deutsch",
+                    "ref:locale:fr": "Français",
+                    "Language": "Sprache"
+                }
+            }
+        },
+        "data": {
+            "drawer": {
+                "menu": {
+                    "session:": {
+                        "language": {
+                            "name": "Language",
+                            "tabs": "language",
+                            "icon": "x-icon-locale"
+                        }
+                    },
+                    "session:true": {
+                        "language": {
+                            "name": "Language",
+                            "tabs": "language",
+                            "icon": "x-icon-locale"
+                        }
+                    }
+                }
+            },
+            "menu": {
+                "session:": {
+                    "language": {}
+                },
+                "session:true": {
+                    "language": {}
+                }
+            },
+            "navbar": {
+                "menu": {
+                    "session:": {
+                        "language": {}
+                    },
+                    "session:true": {
+                        "language": {}
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "current": {
+            "site": {
+                "languages": [
+                    "en",
+                    "es",
+                    "fr",
+                    "de"
+                ]
+            }
+        }
+    }
+}

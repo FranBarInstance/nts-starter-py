@@ -1,42 +1,12 @@
 {
     "inherit": {
         "locale": {
-            "current": "en",
-            "trans": {
-                "en": {
-                    "ref:locale:en": "English",
-                    "ref:locale:es": "Español",
-                    "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français",
-                    "Language": "Language"
-                },
-                "es": {
-                    "ref:locale:en": "English",
-                    "ref:locale:es": "Español",
-                    "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français",
-                    "Language": "Idioma"
-                },
-                "fr": {
-                    "ref:locale:en": "English",
-                    "ref:locale:es": "Español",
-                    "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français",
-                    "Language": "Langue"
-                },
-                "de": {
-                    "ref:locale:en": "English",
-                    "ref:locale:es": "Español",
-                    "ref:locale:de": "Deutsch",
-                    "ref:locale:fr": "Français",
-                    "Language": "Sprache"
-                }
-            },
-            "drawer": {
-                "name": "Neutral TS"
-            }
+            "current": "en"
         },
         "data": {
+            "drawer": {
+                "name": "Neutral TS"
+            },
             "current": {
                 "theme": {},
                 "route": {

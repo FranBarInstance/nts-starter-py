@@ -1,4 +1,4 @@
-"""Component site - Init"""
+"""Component locale - Init"""
 
 from app.config import Config  # pylint: disable=import-error
 
@@ -6,9 +6,14 @@ from app.config import Config  # pylint: disable=import-error
 def init_component(_component, component_schema, _schema):
     """Component - Init"""
 
+    if len(component_schema['data']['current']['site']['languages']) < 2:
+        component_schema['inherit']['data']['navbar']['menu']['session:']['language'] = None
+        component_schema['inherit']['data']['navbar']['menu']['session:true']['language'] = None
+        return
+
     languages = component_schema['data']['current']['site']['languages']
 
-    # Language menu for dropdown
+    # Language navbar menu for dropdown
     menu = {
         'name': 'Language',
         'link': '',
