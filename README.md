@@ -1,3 +1,3 @@
 # Neutral TS Starter Py
 
-## Move: [https://github.com/FranBarInstance/neutral-starter-py](neutral-starter-py) 
+## Move: [neutral-starter-py](https://github.com/FranBarInstance/neutral-starter-py) 
